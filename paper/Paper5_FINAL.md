@@ -5,7 +5,7 @@
 
 **Affiliation:** Independent Researcher, Gorakhpur, Uttar Pradesh, India
 
-> **Author Note.** This paper presents a computational methodology study. All results derive from publicly available datasets (PhysioNet BCI2000 [7], STEW [8]), synthetic benchmarks, and algorithm verification. No physical device was constructed; no human participants were recruited for this study. A parametric hardware acquisition specification is provided in Section 3 to establish a concrete signal-chain context for the pipeline. Physical hardware-in-the-loop testing and human-subject pilot trials are explicitly deferred to a planned follow-up study.
+> **Author Note.** This paper presents a computational methodology study. All results derive from publicly available datasets (PhysioNet BCI2000 [7], STEW [8]), synthetic benchmarks, and algorithm verification. No physical device was constructed; no human participants were recruited for this study. A parametric hardware acquisition specification is provided in Section 3 to establish a concrete signal-chain context for the pipeline. Physical hardware-in-the-loop testing and human-subject pilot trials are explicitly deferred to a planned follow-up study. The open-source code implementation and verification pipeline for this project are publicly available on GitHub at KaushikPratapSingh/bci-riemannian-verification.
 
 ---
 
