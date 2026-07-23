@@ -1,13 +1,11 @@
 # Leakage-Audited Riemannian Classification and Guardrail-Constrained AI Narration for Low-Channel EEG: A Verification Methodology
 
-*Submitted to: Frontiers in Human Neuroscience (Section: Brain-Computer Interfaces)*
-*Manuscript type: Methods Article*
 
 **Author:** Kaushik Pratap Singh
 
 **Affiliation:** Independent Researcher, Gorakhpur, Uttar Pradesh, India
 
-> **Author Note.** This paper presents a computational methodology study. Submitted to Frontiers in Human Neuroscience under the Methods Article category, which explicitly accepts computational methodology contributions without mandatory physical device or human-participant data requirements. All results derive from publicly available datasets (PhysioNet BCI2000 [7], STEW [8]), synthetic benchmarks, and algorithm verification. No physical device was constructed; no human participants were recruited for this study. A parametric hardware acquisition specification is provided in Section 3 to establish a concrete signal-chain context for the pipeline. Physical hardware-in-the-loop testing and human-subject pilot trials are explicitly deferred to a planned follow-up study.
+> **Author Note.** This paper presents a computational methodology study. All results derive from publicly available datasets (PhysioNet BCI2000 [7], STEW [8]), synthetic benchmarks, and algorithm verification. No physical device was constructed; no human participants were recruited for this study. A parametric hardware acquisition specification is provided in Section 3 to establish a concrete signal-chain context for the pipeline. Physical hardware-in-the-loop testing and human-subject pilot trials are explicitly deferred to a planned follow-up study.
 
 ---
 
