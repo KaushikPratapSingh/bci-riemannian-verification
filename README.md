@@ -2,7 +2,6 @@
 
 **A verification-first BCI software pipeline, built from scratch during a gap year.**
 
-📄 **Paper:** [`Paper5_FINAL.md`](./paper/Paper5_FINAL.md) — submitted to *Frontiers in Human Neuroscience* (Methods Article track)
 🔁 **Reproduction Guide:** [`REPRODUCTION_GUIDE.md`](./REPRODUCTION_GUIDE.md) — exact terminal commands for every number in the paper
 🗂️ **Script Index:** [`SCRIPT_INDEX.md`](./SCRIPT_INDEX.md) — which scripts are cited in the paper and which are exploratory context, so you don't have to guess
 🐛 **Bug Registry:** [Appendix B of the paper](./paper/Paper5_FINAL.md#appendix-b-software-bug-registry) — every bug found, and how it was caught
@@ -222,7 +221,7 @@ If you use this pipeline or its verification methodology, please cite:
 ```
 Singh, K. P. (2026). Leakage-Audited Riemannian Classification and
 Guardrail-Constrained AI Narration for Low-Channel EEG: A Verification
-Methodology. Submitted to Frontiers in Human Neuroscience.
+Methodology. 
 ```
 
 ---
