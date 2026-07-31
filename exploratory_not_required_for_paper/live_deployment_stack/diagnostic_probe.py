@@ -1,0 +1,9 @@
+def compute_engagement_index_debug(epoch_data, fs=FS):
+    # ... existing logic ...
+    signal = np.mean(epoch_data, axis=1)
+    # ... Welch PSD calculation ...
+    # Add these prints to see the components
+    print(f"DEBUG: Theta={np.sum(psd[(freqs >= 4)  & (freqs < 8)]):.3f}, "
+          f"Alpha={np.sum(psd[(freqs >= 8)  & (freqs < 13)]):.3f}, "
+          f"Beta={np.sum(psd[(freqs >= 13) & (freqs <= 30)]):.3f}")
+    # ... return calculation ...

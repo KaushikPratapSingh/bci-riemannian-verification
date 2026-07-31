@@ -1,0 +1,9 @@
+C:\Users\HP\Downloads\ML Cohort Versions Description>py loso_significance_test.py --intact ML_Cohort_v34.txt --shuffled ML_Cohort_v34.txt --metric TSA
+Metric: TSA | n subjects paired: 50
+Intact mean: 74.72% (min 35.0, max 100.0)
+Shuffled mean: 47.87% (min 27.3, max 70.0)
+Mean paired difference (intact - shuffled): 26.85 pp
+95% bootstrap CI on mean difference: [20.42, 33.16] pp
+Sign test: intact > shuffled for 42/50 subjects, < for 5/50, tied for 3/50
+
+Wilcoxon signed-rank test (paired, two-sided): W=66.0, p=0.000000 -> significant at alpha=0.05

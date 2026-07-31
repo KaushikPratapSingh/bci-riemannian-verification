@@ -1,0 +1,63 @@
+✓ REST Centroid converged in 27 iterations (Tolerance limit: 1e-5).
+   ✓ COG Centroid converged in 19 iterations (Tolerance limit: 1e-5).
+
+📊 ======================================================================
+📈 ROUTE A BIOLOGICAL EVIDENCE SUMMARY:
+=========================================================================
+✅ Biological Dataset:             Human STEW Record Pool (48 Subjects)
+✅ Baseline Manifold Regularization: Tikhonov Regularization (lambda = 10^-6)
+✅ Canonical Determinant Swelling:   92898.3111x volume inflation
+✅ Dominant Eigenvalue Swelling:    12.7674x variance inflation
+✅ Inter-State Geodesic Distance:   1.1845 units (REST ↔ COGNITIVE)
+=========================================================================
+🚀 CONCLUSION: Riemannian Fréchet Means strictly conserve determinant
+   volume on real human scalp tissue, neutralizing legacy swelling.
+======================================================================
+
+
+C:\Users\HP\Downloads\human_benchmarks>py swelling_reproducibility_sweep.py
+Loading resting-state STEW data and computing the full window pool...
+Total windows available: 7198
+
+  N=100 seed=20/20 ratio=12858.81x (iters=31, 2.5s elapsed))
+  -> N=100 done in 2.5s total
+N=  100  mean=    55926.99x  std=  63228.86  CV= 1.131  min=   4013.90  max= 276792.53
+  N=250 seed=20/20 ratio=44166.50x (iters=31, 6.0s elapsed))
+  -> N=250 done in 6.0s total
+N=  250  mean=   113061.89x  std=  61033.46  CV= 0.540  min=  10449.87  max= 255607.27
+  N=500 seed=20/20 ratio=33619.59x (iters=30, 12.0s elapsed))
+  -> N=500 done in 12.0s total
+N=  500  mean=    95454.47x  std=  52932.56  CV= 0.555  min=  20590.96  max= 245435.37
+  N=750 seed=20/20 ratio=34482.08x (iters=29, 17.6s elapsed))
+  -> N=750 done in 17.6s total
+N=  750  mean=    95685.44x  std=  62148.68  CV= 0.650  min=  22260.75  max= 332508.23
+  N=1000 seed=20/20 ratio=82769.08x (iters=28, 22.9s elapsed))
+  -> N=1000 done in 22.9s total
+N= 1000  mean=    99694.48x  std=  48577.14  CV= 0.487  min=  44964.09  max= 292066.63
+  N=1500 seed=20/20 ratio=76428.95x (iters=26, 33.8s elapsed))
+  -> N=1500 done in 33.8s total
+N= 1500  mean=    89948.08x  std=  27467.71  CV= 0.305  min=  50614.16  max= 171984.87
+  N=2000 seed=20/20 ratio=110828.40x (iters=26, 44.9s elapsed)
+  -> N=2000 done in 44.9s total
+N= 2000  mean=    92640.10x  std=  23277.98  CV= 0.251  min=  53207.01  max= 142815.47
+  N=3000 seed=20/20 ratio=86453.17x (iters=26, 67.3s elapsed))
+  -> N=3000 done in 67.3s total
+N= 3000  mean=    89236.81x  std=  18920.65  CV= 0.212  min=  63699.40  max= 123915.15
+
+Saved results to swelling_reproducibility_results.csv
+
+======================================================================
+HOW TO READ THIS:
+If the mean_ratio column still dips at N=1000 relative to N=500 and
+N=1500, AND the std/CV at each N is small relative to the size of
+that dip, the non-monotonicity is a reproducible property of the
+estimator (Section 7.3's original explanation holds, just now with
+evidence instead of narrative).
+
+If the dip disappears, moves to a different N, or the std at each N
+is comparable to the size of the dip itself, the original single-run
+dip was most likely a sampling artefact and Section 7.3 should be
+rewritten to say the swelling ratio increases roughly monotonically
+with N once averaged over window selection, with seed-to-seed noise
+of magnitude X at each N.
+======================================================================

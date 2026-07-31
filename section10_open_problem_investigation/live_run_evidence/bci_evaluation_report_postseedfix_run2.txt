@@ -1,0 +1,54 @@
+
+======================================================================
+  BCI SESSION EVALUATION REPORT v2
+  Session signals : eeg_signals_1785026682.csv
+  Session metrics : eeg_metrics_1785026682.csv
+======================================================================
+
+── SESSION OVERVIEW ────────────────────────────────────────────────
+  Inference windows : 4053  (811s = 13.5 min)
+  SQI               : nan  95% CI [nan, nan]
+  Signal RMS (live) : 42.04 µV
+
+── SPECTRAL VALIDATION (LIVE SESSION) ──────────────────────────────
+
+  Score: 4/5 criteria met
+
+── PER-STATE SPECTRAL PROFILES (calibration blocks) ────────────────
+  State             RMS    Slope       R²   α-peak   α-prom   NASA-EI
+  -----------------------------------------------------------------
+  rest             40.5   -2.572   0.6960    11.2Hz     8.57x    0.1006
+  cognitive        44.2   -2.392   0.9148     8.3Hz     1.76x    0.1576
+  motor            44.3   -2.120   0.9384    11.2Hz     1.64x    0.2110
+
+── ALPHA/BETA REACTIVITY (ERD/ERS check) ───────────────────────────
+  REST→COGNITIVE: alpha -42.8%  beta +46.3%
+  Expected (ERD): alpha negative, beta positive
+  Direction correct: alpha=✅  beta=✅
+  REST→MOTOR:     alpha -56.5% (Mu desync expected negative: ✅)
+
+── RIEMANNIAN MANIFOLD GEOMETRY ────────────────────────────────────
+  Centroid geodesic distances (from structural_brain_baseline.npz):
+    rest_cog          : 0.7434 ❌
+    rest_motor        : 1.4007 ✅
+    cog_motor         : 0.9189 ❌
+
+  Live session d_ref distribution:
+    Mean: nan  95% CI [nan, nan]
+    P5:   nan  Median: nan  P95: nan
+
+── ENGAGEMENT INDEX DYNAMICS ───────────────────────────────────────
+  EI mean: nan  95% CI [nan, nan]
+  EI range: [nan, nan]
+  Time EI > 0.8  (🚀 engaged): 26.5%
+  Time EI < -0.6 (🎯 resting): 1.9%
+  Mann-Whitney (engaged > resting): p=0.000000
+  Cohen's d (engaged vs resting):  6.717
+
+── NOTES ON 1/f SLOPE ─────────────────────────────────────────────
+  Measured live 1/f slope: -2.442
+  Published dry-electrode frontal EEG: -1.5 to -2.0
+  Causal IIR Butterworth filters emphasize low frequencies
+  relative to zero-phase filtfilt, steepening the fitted slope.
+  For publication: report slope with filter type stated explicitly.
+======================================================================
