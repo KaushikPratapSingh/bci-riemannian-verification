@@ -3,8 +3,7 @@
 **A verification-first BCI software pipeline, built from scratch during a gap year.**
 
 **Author:** Kaushik Pratap Singh · ORCID: [0009-0004-2410-3036](https://orcid.org/0009-0004-2410-3036)
-**Archived release (Zenodo):** [doi:10.5281/zenodo.21709756](https://doi.org/10.5281/zenodo.21709756)
-**Archived release (Zenodo) Github repo:** [doi:10.5281/zenodo.21729045](https://doi.org/10.5281/zenodo.21729045)
+**Archived release (Zenodo):** [doi:10.5281/zenodo.21729489](https://doi.org/10.5281/zenodo.21729489)
 
 📄 **Paper:** [`Singh_2026_BCI_Verification.pdf`](./paper/Singh_2026_BCI_Verification.pdf) ([LaTeX source](./paper/Singh_2026_BCI_Verification.tex)) — a computational verification methodology study
 🔁 **Reproduction Guide:** [`REPRODUCTION_GUIDE.md`](./REPRODUCTION_GUIDE.md) — exact terminal commands for every number in the paper
@@ -235,7 +234,7 @@ If you use this pipeline or its verification methodology, please cite:
 ```
 Singh, K. P. (2026). Leakage-Audited Riemannian Classification and
 Guardrail-Constrained AI Narration for Low-Channel EEG: A Verification
-Methodology. Zenodo. https://doi.org/10.5281/zenodo.21709756
+Methodology. Zenodo. https://doi.org/10.5281/zenodo.21729489
 ```
 
 Author ORCID: [0009-0004-2410-3036](https://orcid.org/0009-0004-2410-3036)
