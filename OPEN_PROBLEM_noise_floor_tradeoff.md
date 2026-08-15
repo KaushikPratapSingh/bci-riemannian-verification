@@ -1,7 +1,6 @@
 # Open Problem: The 1/f Slope vs. State-Separability Trade-off in the AR(2) Simulator's Broadband Noise Floor
 
-*Compiled from an extended verification investigation triggered by a peer-review
-panel recommendation to (a) correct the causal-filter group-delay distortion
+*Compiled from a verification investigation to (a) correct the causal-filter group-delay distortion
 of the fitted 1/f spectral slope, and (b) resolve the beta ERD/ERS direction
 anomaly. Documented here as an open problem for follow-up work rather than a
 closed fix, in keeping with this paper's disclosure-over-omission principle
